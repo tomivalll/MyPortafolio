@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Personal</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Iconos de Font Awesome para el proyecto -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <h1 class="logo">Mi Portafolio</h1>
+      <button id="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
+      <button id="download-cv" class="btn btn-outline" style="margin-left: 1rem;">
+        <i class="fas fa-download"></i> Descargar CV
+      </button>
+    </div>
+  </header>
+
+    <!-- Navegación -->
+  <nav id="navbar">
+    <div class="container">
+      <ul class="nav-menu">
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#tarjetas">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#peliculas">Películas</a></li>
+      </ul>
+      <button id="mobile-menu-btn" aria-label="Menú móvil">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="mobile-menu" class="mobile-menu">
+        <ul>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#tarjetas">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#peliculas">Películas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <button id="menuToggle" class="menu-toggle"></button>
+
+  <!-- Temporizador -->
+  <div id="countdownContainer" class="countdown-timer">
+    <h3>Cuenta Regresiva</h3>
+    <p id="days"></p>
+    <p id="hours"></p>
+    <p id="minutes"></p>
+    <p id="seconds"></p> <!-- Añadido para los segundos -->
+  </div>
+
+
+  <!-- Contenido Principal -->
+  <main>
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <h2 class="section-title">Sobre Mí</h2>
+        <button id="toggle-about" class="btn btn-outline" style="margin-bottom:1rem;">Mostrar/Ocultar</button>
+        <div id="about-text">
+          <p>¡Hola! me llamo Franco, soy un artista musical apasionado por hacer musica de trap.<br> Tambien suelo hacer Paginas webs aunque es secundario.</p>
+          <p>Mi objetivo en la vida es ser alguien como artista y ser reconocido por muchas personas.</p>
+        </div>
+      </div>
+          <div class="about-image">
+            <div class="profile-image">
+              <img src="img/lucho.png" alt="Foto de perfil">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="tarjetas" class="section">
+      <div class="container">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <div class="card project-card">
+            <div class="card-header">
+              <h3>E-commerce Website</h3>
+              <p>Una tienda en línea completa con carrito de compras, pagos y panel de administración.</p>
+            </div>
+            <div class="card-content">
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Stripe</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline">
+                <i class="fab fa-github"></i> Código
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="card project-card">
+            <div class="card-header">
+              <h3>App de Gestión de Tareas</h3>
+              <p>Aplicación para organizar y seguir el progreso de tareas personales y profesionales.</p>
+            </div>
+            <div class="card-content">
+              <div class="tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline">
+                <i class="fab fa-github"></i> Código
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="card project-card">
+            <div class="card-header">
+              <h3>Blog Personal</h3>
+              <p>Plataforma de blog con sistema de gestión de contenidos y comentarios.</p>
+            </div>
+            <div class="card-content">
+              <div class="tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline">
+                <i class="fab fa-github"></i> Código
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <h2 class="section-title">Mis Habilidades</h2>
+        <div class="skills-grid">
+          <!-- Habilidad 1 -->
+          <div class="card skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>HTML/CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+            <p class="skill-percentage">90%</p>
+          </div>
+
+          <!-- Habilidad 2 -->
+          <div class="card skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+            <p class="skill-percentage">85%</p>
+          </div>
+
+          <!-- Habilidad 3 -->
+          <div class="card skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>React</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+            <p class="skill-percentage">80%</p>
+          </div>
+
+          <!-- Habilidad 4 -->
+          <div class="card skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Diseño UI/UX</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 100%"></div>
+            </div>
+            <p class="skill-percentage">100%</p>
+          </div>
+
+          <!-- Habilidad 5 -->
+          <div class="card skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3>Node.js</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+            <p class="skill-percentage">70%</p>
+          </div>
+
+          <!-- Habilidad 6 -->
+          <div class="card skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Bases de Datos</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 65%"></div>
+            </div>
+            <p class="skill-percentage">65%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Películas Favoritas -->
+    <section id="peliculas" class="section">
+      <div class="container">
+        <h2 class="section-title">Mis Películas Favoritas</h2>
+        <div class="movies-grid">
+          <!-- Película 1 -->
+          <div class="card movie-card">
+            <div class="movie-poster">
+              <img src="img/wallstreet.jpg" alt="Lobo wallstreet">
+            </div>
+            <div class="movie-details">
+              <h3>El lobo de Wall Street</h3>
+              <p>Jordan Belfort, 2013</p>
+              <div class="movie-tags">
+                <span class="tag">Suspenso</span>
+                <span class="tag">Crimen</span>
+              </div>
+              <div class="movie-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Película 2 -->
+          <div class="card movie-card">
+            <div class="movie-poster">
+              <img src="img/elpadrino.jpg" alt="El Padrino">
+            </div>
+            <div class="movie-details">
+              <h3>El Padrino</h3>
+              <p>Francis Ford Coppola, 1972</p>
+              <div class="movie-tags">
+                <span class="tag">Crimen</span>
+                <span class="tag">Drama</span>
+              </div>
+              <div class="movie-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Película 3 -->
+          <div class="card movie-card">
+            <div class="movie-poster">
+              <img src="img/scarface.jpg" alt="ScareFace">
+            </div>
+            <div class="movie-details">
+              <h3>ScareFace</h3>
+              <p>Tony Montana 1983</p>
+              <div class="movie-tags">
+                <span class="tag">Crimen</span>
+                <span class="tag">Suspenso</span>
+              </div>
+              <div class="movie-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h3>Mi Portafolio</h3>
+          <p class="copyright">&copy; <span id="current-year"></span> Todos los derechos reservados.</p>
+          <p id="live-clock" style="font-size:1.1em; margin-top:1em; color: rgb(157, 158, 160);"></p>
+          <p id="visit-count" style="font-size:1em; margin-top:0.5em; color: rgba(46, 207, 81, 0.863);"></p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contacto</h3>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contacto@miportfolio.com">contacto@Fran.com</a>
+          </div>
+          <h4>Redes Sociales</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Github">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <div id="custom-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+  <div style="background:#fff; color:#222; padding:2rem; border-radius:1rem; max-width:90vw; text-align:center; box-shadow:0 2px 20px rgba(0,0,0,0.2);">
+    <p style="margin-bottom:2rem;">¿Seguro que quieres enviar el formulario?</p>
+    <button id="modal-accept" class="btn btn-primary" style="margin-right:1rem;">Aceptar</button>
+    <button style="color:#222" id="modal-cancel" class="btn btn-outline">Volver</button>
+  </div>
+  </div>
+
+<div id="error-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+  <div style="background:#fff; color:#222; padding:2rem; border-radius:1rem; max-width:90vw; text-align:center; box-shadow:0 2px 20px rgba(0,0,0,0.2);">
+    <p style="margin-bottom:2rem;">El correo ingresado no contiene un dominio válido (.com, .ar, etc.).<br>Agrega el correspondiente</p>
+    <button id="error-close" class="btn btn-primary">Cerrar</button>
+  </div>
+</div>
+
+</body>
+</html>
