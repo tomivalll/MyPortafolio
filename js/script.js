@@ -29,18 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===============================
   // 3. TOGGLE DE TEMA CLARO/OSCURO Y GUARDADO EN LOCALSTORAGE
   // ===============================
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-theme");
-  }
+  document.addEventListener("DOMContentLoaded", () => {
+  // --- Forzar el modo oscuro desde el inicio ---
+  document.body.classList.add("dark-theme");
 
+  // --- Variables ---
+  const themeToggle = document.getElementById("theme-toggle");
+
+  // --- Cambio de tema con el botón ---
   if (themeToggle) {
     themeToggle.addEventListener("click", () => {
       document.body.classList.toggle("dark-theme");
+
       const theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
       localStorage.setItem("theme", theme);
     });
   }
+});
+
 
   // ===============================
   // 4. MENÚ MÓVIL DESPLEGABLE
